@@ -8,3 +8,10 @@ Build
 ------
 
 You can build it using cabal: `cabal configure` (maybe `cabal update`) and then `cabal build`.
+
+TODO
+-----
+
+* Add a few snowflake examples
+* Antialiasing, maybex
+* Prettify snowflakes
