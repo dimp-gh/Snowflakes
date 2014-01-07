@@ -14,7 +14,7 @@ data Snowflake = Snowflake {
 randomPattern :: (RandomGen g) => Int -> Int -> g -> Pattern
 randomPattern factor size gen =
   let zeroToNs = take size $ randomRs (0, factor - 1) gen
-      angles = [ (pi :: Float) * (fromIntegral n) / (fromIntegral factor)
+      angles = [ 2.0 * pi * (fromIntegral n) / (fromIntegral factor)
                  | n <- zeroToNs]
       segments = map Segment angles
   in segments 
