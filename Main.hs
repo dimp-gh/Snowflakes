@@ -24,4 +24,4 @@ main = do
   gen <- getStdGen
   let snowy = randomSnowflake factor size gen
   let snowflakePic = drawSnowflake snowy (0, 0)
-  display (InWindow "Snowflakes" (2000, 2000) (10, 10)) black snowflakePic
+  display (InWindow "Snowflakes" (1000, 1000) (10, 10)) black snowflakePic
