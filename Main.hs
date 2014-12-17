@@ -18,9 +18,11 @@ drawSnowflake snowy startPos =
   in Color white $ Pictures lines
 
 main = do
-  args <- getArgs
-  let factor = (read (args !! 0)) :: Int
-  let size = (read (args !! 1)) :: Int
+-- program takes two arguments
+-- first one is the count of symmetry axises (best results are with value 8)
+-- second one is the segment count in the snowflake generator (value about 10k is pretty good)
+  let factor = 8
+  let size = 15000
   gen <- getStdGen
   let snowy = randomSnowflake factor size gen
   let snowflakePic = drawSnowflake snowy (0, 0)

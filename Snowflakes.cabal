@@ -17,4 +17,4 @@ cabal-version:       >=1.8
 executable Snowflakes
   main-is: Main.hs            
   -- other-modules:       
-  build-depends:       base ==4.6.*, gloss ==1.8.*, random ==1.0.*
+  build-depends:       base ==4.7.*, gloss ==1.8.*, random ==1.0.*
